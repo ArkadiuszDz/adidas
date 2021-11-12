@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { useHistory } from "react-router-dom";
-// import ReCAPTCHA from "react-google-recaptcha";
 import axios from 'axios';
 import '../styles/form/form.scss';
 
@@ -14,9 +13,6 @@ const Form = () => {
   const [agreement1Error, setAgreement1Error] = useState(false);
   const [placeholderClass, setPlaceholderClass] = useState('');
   const [emailPlaceholderClass, setEmailPlaceholderClass] = useState('');
-
-  // const recaptchaRef = useRef();
-
 
   const textErrorMessage = (
     <p className="error-message">Please enter your code</p>

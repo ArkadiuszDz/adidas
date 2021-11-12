@@ -20,7 +20,6 @@ const Letter = ({ match }) => {
 
   let [letter, setLetter] = useState();
   let [lastLetter, setLastLetter] = useState(false);
-    // https://dev-488-012-smm.vmlcloud.pl
   useEffect(() => {
     if (match.params.hash === 'b9ece18c950afbfa6b0fdbfa4ff731d3') {
       return history.replace('/');
